@@ -53,3 +53,6 @@ For questions about *german-bert* just open an issue
 
 Research supported with Cloud TPUs from Google's TensorFlow Research Cloud (TFRC).
 Thanks for providing access to the TFRC ❤️
+
+Thanks to the generous support from the [Hugging Face](https://huggingface.co/) team,
+it is possible to download both cased and uncased models from their S3 storage 🤗
