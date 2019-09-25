@@ -1,7 +1,7 @@
 # 👾 + 📚 dbmdz German BERT model
 
 In this repository the MDZ Digital Library team (dbmdz) at the Bavarian State
-Library open source another German BERT model 🎉
+Library open sources another German BERT model 🎉
 
 # Changelog
 
@@ -10,22 +10,22 @@ Library open source another German BERT model 🎉
 # Stats
 
 In addition to the recently released [German BERT](https://deepset.ai/german-bert)
-model by [deepset](https://deepset.ai/) we provide another model.
+model by [deepset](https://deepset.ai/) we provide another German-language model.
 
-We use a recent Wikipedia dump, EU Bookshop corpus, Open Subtitles, CommonCrawl,
-ParaCrawl and News Crawl. This results in a dataset with a size of 16GB and
-2,350,234,427 token.
+The source data for the model consists of a recent Wikipedia dump, EU Bookshop corpus,
+Open Subtitles, CommonCrawl, ParaCrawl and News Crawl. This results in a dataset with
+a size of 16GB and 2,350,234,427 tokens.
 
-We used [spacy](https://spacy.io/) in order to perform sentence splitting. We
-follow the pre-processing steps (sentence piece model for vocab generation) as
-used for training [SciBERT](https://github.com/allenai/scibert). We train a
-model with an initial sequence length of 512 subwords for 1.5M steps.
+For sentence splitting, we use [spacy](https://spacy.io/). Our preprocessing steps
+(sentence piece model for vocab generation) follow those used for training
+[SciBERT](https://github.com/allenai/scibert). The model is trained with an initial
+sequence length of 512 subwords and was performed for 1.5M steps.
 
-We train and release both cased and uncased models.
+This release includes both cased and uncased models.
 
 # Model weights
 
-We provide PyTorch-Transformers compatible weights. If you need access to the
+Currently only PyTorch-Transformers compatible weights are available. If you need access to
 TensorFlow checkpoints, please raise an issue!
 
 ## Cased model
