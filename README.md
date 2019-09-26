@@ -1,4 +1,4 @@
-# 👾 + 📚 dbmdz German BERT model
+# 🤗 + 📚 dbmdz German BERT model
 
 In this repository the MDZ Digital Library team (dbmdz) at the Bavarian State
 Library open sources another German BERT model 🎉
@@ -25,8 +25,9 @@ This release includes both cased and uncased models.
 
 # Model weights
 
-Currently only PyTorch-Transformers compatible weights are available. If you need access to
-TensorFlow checkpoints, please raise an issue!
+Currently only PyTorch-[Transformers](https://github.com/huggingface/transformers)
+compatible weights are available. If you need access to TensorFlow checkpoints,
+please raise an issue!
 
 ## Cased model
 
