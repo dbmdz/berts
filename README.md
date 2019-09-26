@@ -29,6 +29,11 @@ Currently only PyTorch-[Transformers](https://github.com/huggingface/transformer
 compatible weights are available. If you need access to TensorFlow checkpoints,
 please raise an issue!
 
+| Model                            | Downloads
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------
+| `bert-base-german-dbmdz-cased`   | [`config.json`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-cased-config.json) • [`pytorch_model.bin`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-cased-pytorch_model.bin) • [`vocab.txt`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-cased-vocab.txt)
+| `bert-base-german-dbmdz-uncased` | [`config.json`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-uncased-config.json) • [`pytorch_model.bin`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-uncased-pytorch_model.bin) • [`vocab.txt`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-uncased-vocab.txt)
+
 ## Cased model
 
 * `config.json`, see [link](https://schweter.eu/cloud/germabert-base-cased/config.json)
