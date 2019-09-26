@@ -34,18 +34,6 @@ please raise an issue!
 | `bert-base-german-dbmdz-cased`   | [`config.json`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-cased-config.json) • [`pytorch_model.bin`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-cased-pytorch_model.bin) • [`vocab.txt`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-cased-vocab.txt)
 | `bert-base-german-dbmdz-uncased` | [`config.json`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-uncased-config.json) • [`pytorch_model.bin`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-uncased-pytorch_model.bin) • [`vocab.txt`](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-german-dbmdz-uncased-vocab.txt)
 
-## Cased model
-
-* `config.json`, see [link](https://schweter.eu/cloud/germabert-base-cased/config.json)
-* `pytorch_model.bin`, see [link](https://schweter.eu/cloud/germabert-base-cased/pytorch_model.bin)
-* `vocab.txt`, see [link](https://schweter.eu/cloud/germabert-base-cased/vocab.txt)
-
-## Uncased model
-
-* `config.json`, see [link](https://schweter.eu/cloud/germabert-base-uncased/config.json)
-* `pytorch_model.bin`, see [link](https://schweter.eu/cloud/germabert-base-uncased/pytorch_model.bin)
-* `vocab.txt`, see [link](https://schweter.eu/cloud/germabert-base-uncased/vocab.txt)
-
 # Results
 
 For results on downstream tasks like NER or PoS tagging, please refer to
