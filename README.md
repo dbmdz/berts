@@ -43,3 +43,11 @@ For results on downstream tasks like NER or PoS tagging, please refer to
 
 For questions about *german-bert* just open an issue
 [here](https://github.com/dbmdz/german-bert/issues/new) 🤗
+
+# Acknowledgments
+
+Research supported with Cloud TPUs from Google's TensorFlow Research Cloud (TFRC).
+Thanks for providing access to the TFRC ❤️
+
+Thanks to the generous support from the [Hugging Face](https://huggingface.co/) team,
+it is possible to download both cased and uncased models from their S3 storage 🤗
