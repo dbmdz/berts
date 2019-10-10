@@ -5,6 +5,7 @@ Library open sources another German BERT model 🎉
 
 # Changelog
 
+* 10.10.2019: Public release
 * 24.09.2019: Initial version
 
 # Stats
