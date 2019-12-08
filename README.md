@@ -5,6 +5,9 @@ Library open sources another German BERT model 🎉
 
 # Changelog
 
+* 08.12.2019: If you consider using our model for the upcoming GermEval 2020 shared task,
+              please read at least this [blog post](https://medium.com/@emilymenonbender/is-there-research-that-shouldnt-be-done-is-there-research-that-shouldn-t-be-encouraged-b1bf7d321bb6)
+              by Emily Bender on ethical issues!
 * 10.10.2019: Public release
 * 24.09.2019: Initial version
 
