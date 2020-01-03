@@ -64,7 +64,7 @@ The source data for the Italian BERT model consists of a recent Wikipedia dump a
 various texts from the [OPUS corpora](http://opus.nlpl.eu/) collection. The final
 training corpus has a size of 13GB and 2,050,057,573 tokens.
 
-For sentence splitting, we train an own sentence splitting model using NLTK.
+For sentence splitting, we use [spacy](https://spacy.io/)
 Our cased and uncased models are training with an initial sequence length of 512
 subwords for ~2-3M steps.
 
