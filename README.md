@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 10.02.2020: Public release of cased and uncased BERT models for Historic German: German Europeana BERT
 * 20.01.2019: Public release of cased and uncased XXL BERT models for Italian. They can be downloaded from
               the [Huggingface model hub](https://huggingface.co/dbmdz).
 * 30.12.2019: Public release of cased and uncased BERT models for Italian.
@@ -109,6 +110,50 @@ from transformers import AutoModel, AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-italian-xxl-cased")
 model = AutoModel.from_pretrained("dbmdz/bert-base-italian-xxl-cased")
+```
+
+# German Europeana BERT
+
+We use the open source [Europeana newspapers](http://www.europeana-newspapers.eu/)
+that were provided by *The European Library*. The final
+training corpus has a size of 51GB and consists of 8,035,986,369 tokens.
+
+Detailed information about the data and pretraining steps can be found in
+[this repository](https://github.com/stefan-it/europeana-bert).
+
+## Model weights
+
+Currently only PyTorch-[Transformers](https://github.com/huggingface/transformers)
+compatible weights are available. If you need access to TensorFlow checkpoints,
+please raise an issue!
+
+| Model                                      | Downloads
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------
+| `dbmdz/bert-base-german-europeana-cased`   | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-cased/config.json)   • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-cased/pytorch_model.bin)   • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-cased/vocab.txt)
+| `dbmdz/bert-base-german-europeana-uncased` | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-uncased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-uncased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-uncased/vocab.txt)
+
+## Results
+
+For results on Historic NER, please refer to [this repository](https://github.com/stefan-it/europeana-bert).
+
+## Usage
+
+With Transformers >= 2.3 our German Europeana BERT models can be loaded like:
+
+```python
+from transformers import AutoModel, AutoTokenizer
+
+tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-german-europeana-cased")
+model = AutoModel.from_pretrained("dbmdz/bert-base-german-europeana-cased")
+```
+
+The German Europeana BERT uncased model can be loaded like:
+
+```python
+from transformers import AutoModel, AutoTokenizer
+
+tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-german-europeana-uncased")
+model = AutoModel.from_pretrained("dbmdz/bert-base-german-europeana-uncased")
 ```
 
 # Huggingface model hub
