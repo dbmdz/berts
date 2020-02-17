@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 17.02.2020: Public release of cased BERT model for Turkish: BERTurk
 * 10.02.2020: Public release of cased and uncased BERT models for Historic German: German Europeana BERT
 * 20.01.2019: Public release of cased and uncased XXL BERT models for Italian. They can be downloaded from
               the [Huggingface model hub](https://huggingface.co/dbmdz).
@@ -154,6 +155,44 @@ from transformers import AutoModel, AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-german-europeana-uncased")
 model = AutoModel.from_pretrained("dbmdz/bert-base-german-europeana-uncased")
+```
+
+# Turkish BERT: BERTurk
+
+BERTurk is community-driven cased BERT model for Turkish.
+
+Some datasets used for pretraining and evaluation are contributed from the
+awesome Turkish NLP community, as well as the decision for the model name: BERTurk.
+
+The final training corpus has a size of 35GB and 44,04,976,662 tokens.
+
+Detailed information about the data and pretraining steps can be found in
+[this repository](https://github.com/stefan-it/turkish-bert).
+
+## Model weights
+
+Currently only PyTorch-[Transformers](https://github.com/huggingface/transformers)
+compatible weights are available. If you need access to TensorFlow checkpoints,
+please raise an issue!
+
+| Model                             | Downloads
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------
+| `dbmdz/bert-base-turkish-cased`   | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/vocab.txt)
+
+
+## Results
+
+For results on PoS tagging or NER tasks, please refer to [this repository](https://github.com/stefan-it/turkish-bert).
+
+## Usage
+
+With Transformers >= 2.3 our BERTurk cased model can be loaded like:
+
+```python
+from transformers import AutoModel, AutoTokenizer
+
+tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-turkish-cased")
+model = AutoModel.from_pretrained("dbmdz/bert-base-turkish-cased")
 ```
 
 # Huggingface model hub
