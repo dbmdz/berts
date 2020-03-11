@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 11.03.2020: Public release of cased distilled BERT model for Turkish: DistilBERTurk
 * 17.02.2020: Public release of cased BERT model for Turkish: BERTurk
 * 10.02.2020: Public release of cased and uncased BERT models for Historic German: German Europeana BERT
 * 20.01.2019: Public release of cased and uncased XXL BERT models for Italian. They can be downloaded from
@@ -157,7 +158,7 @@ tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-german-europeana-unca
 model = AutoModel.from_pretrained("dbmdz/bert-base-german-europeana-uncased")
 ```
 
-# Turkish BERT: BERTurk
+# Turkish BERT: BERTurk and DistilBERTurk
 
 BERTurk is community-driven cased BERT model for Turkish.
 
@@ -169,16 +170,21 @@ The final training corpus has a size of 35GB and 44,04,976,662 tokens.
 Detailed information about the data and pretraining steps can be found in
 [this repository](https://github.com/stefan-it/turkish-bert).
 
+Additionally, we trained a distilled version of BERTurk: *DistilBERTurk*, that
+uses knowledge-distillation from BERTurk (teacher model). More information on
+distillation can be found in the excellent ["DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter"](https://arxiv.org/abs/1910.01108)
+paper by Sanh et al. (2019).
+
 ## Model weights
 
 Currently only PyTorch-[Transformers](https://github.com/huggingface/transformers)
 compatible weights are available. If you need access to TensorFlow checkpoints,
 please raise an issue!
 
-| Model                             | Downloads
-| --------------------------------- | ---------------------------------------------------------------------------------------------------------------
-| `dbmdz/bert-base-turkish-cased`   | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/vocab.txt)
-
+| Model                                 | Downloads
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------
+| `dbmdz/bert-base-turkish-cased`       | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/vocab.txt)
+| `dbmdz/distilbert-base-turkish-cased` | [`config.json`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/vocab.txt)
 
 ## Results
 
@@ -193,6 +199,15 @@ from transformers import AutoModel, AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-turkish-cased")
 model = AutoModel.from_pretrained("dbmdz/bert-base-turkish-cased")
+```
+
+The DistilBERTurk model can be loaded with:
+
+```python
+from transformers import AutoModel, AutoTokenizer
+
+tokenizer = AutoTokenizer.from_pretrained("dbmdz/distilbert-base-turkish-cased")
+model = AutoModel.from_pretrained("dbmdz/distilbert-base-turkish-cased")
 ```
 
 # Huggingface model hub
