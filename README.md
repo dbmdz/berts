@@ -76,6 +76,12 @@ For the XXL Italian models, we use the same training data from OPUS and extend
 it with data from the Italian part of the [OSCAR corpus](https://traces1.inria.fr/oscar/).
 Thus, the final training corpus has a size of 81GB and 13,138,379,147 tokens.
 
+Note: Unfortunately, a wrong vocab size was used when training the XXL models.
+This explains the mismatch of the "real" vocab size of 31102, compared to the
+vocab size specified in `config.json`. However, the model is working and all
+evaluations were done under those circumstances.
+See [this issue](https://github.com/dbmdz/berts/issues/7) for more information.
+
 ## Model weights
 
 Currently only PyTorch-[Transformers](https://github.com/huggingface/transformers)
