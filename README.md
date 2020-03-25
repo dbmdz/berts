@@ -5,8 +5,9 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
-* 11.03.2020: Public release of cased distilled BERT model for Turkish: DistilBERTurk
-* 17.02.2020: Public release of cased BERT model for Turkish: BERTurk
+* 25.03.2020: Public release of *BERTurk* uncased model and *BERTurk* models with larger vocab size (128k, cased and uncased)
+* 11.03.2020: Public release of cased distilled BERT model for Turkish: *DistilBERTurk*
+* 17.02.2020: Public release of cased BERT model for Turkish: *BERTurk*
 * 10.02.2020: Public release of cased and uncased BERT models for Historic German: German Europeana BERT
 * 20.01.2019: Public release of cased and uncased XXL BERT models for Italian. They can be downloaded from
               the [Huggingface model hub](https://huggingface.co/dbmdz).
@@ -181,16 +182,21 @@ uses knowledge-distillation from BERTurk (teacher model). More information on
 distillation can be found in the excellent ["DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter"](https://arxiv.org/abs/1910.01108)
 paper by Sanh et al. (2019).
 
+Furthermore, we provide cased and uncased models trained with a larger vocab size (128k instead of 32k).
+
 ## Model weights
 
 Currently only PyTorch-[Transformers](https://github.com/huggingface/transformers)
 compatible weights are available. If you need access to TensorFlow checkpoints,
 please raise an issue!
 
-| Model                                 | Downloads
-| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------
-| `dbmdz/bert-base-turkish-cased`       | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/vocab.txt)
-| `dbmdz/distilbert-base-turkish-cased` | [`config.json`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/vocab.txt)
+| Model                                  | Downloads
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------
+| `dbmdz/bert-base-turkish-cased`        | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/vocab.txt)
+| `dbmdz/bert-base-turkish-uncased`      | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-uncased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-uncased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-uncased/vocab.txt)
+| `dbmdz/bert-base-turkish-128k-cased`   | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-cased/vocab.txt)
+| `dbmdz/bert-base-turkish-128k-uncased` | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-uncased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-uncased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-uncased/vocab.txt)
+| `dbmdz/distilbert-base-turkish-cased`  | [`config.json`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/vocab.txt)
 
 ## Results
 
