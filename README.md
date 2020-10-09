@@ -240,6 +240,10 @@ tokenizer = AutoTokenizer.from_pretrained("dbmdz/electra-base-turkish-cased-disc
 model = AutoModelWithLMHead.from_pretrained("dbmdz/electra-base-turkish-cased-discriminator")
 ```
 
+# License
+
+All models are licensed under [MIT](LICENSE).
+
 # Huggingface model hub
 
 All models are available on the [Huggingface model hub](https://huggingface.co/dbmdz).
