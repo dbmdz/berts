@@ -248,6 +248,11 @@ All models are licensed under [MIT](LICENSE).
 
 All models are available on the [Huggingface model hub](https://huggingface.co/dbmdz).
 
+# Papers
+
+[Here you can find a list papers](papers.md), that used one of our trained models.
+Feel free to open a PR/issue if you want your paper to be included!
+
 # Contact (Bugs, Feedback, Contribution and more)
 
 For questions about our BERT models just open an issue
