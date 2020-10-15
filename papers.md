@@ -16,6 +16,7 @@ one of our trained models. Thanks for using our models 🤗
 * [Evaluating German Transformer Language Models with Syntactic Agreement Tests](https://arxiv.org/abs/2007.03765) - Karolina Zaczynska, Nils Feldhus, Robert Schwarzenberg, Aleksandra Gabryszak, Sebastian Möller
 * [Implementation of Supervised Training Approaches for Monolingual Word Sense Alignment: ACDH-CH System Description for the MWSA Shared Task at GlobaLex 2020](https://www.aclweb.org/anthology/2020.globalex-1.14/) - Lenka Bajcetic, Seung-bin Yim
 * [UPB at GermEval-2020 Task 3: Assessing Summaries for German Texts using BERTScore and Sentence-BERT](http://ceur-ws.org/Vol-2624/germeval-task3-paper2.pdf) - Andrei Paraschiv, Dumitru-Clementin Cercel
+* [Predicting Cognitive and Motivational Style from German Text using Multilingual Transformer Architecture](https://www.inf.uni-hamburg.de/en/inst/ab/lt/resources/data/germeval-2020-cognitive-motive/ge20st1-paper-3.pdf) - Henning Schäfer, Ahmad Idrissi-Yaghir, Andreas Schimanowski, Michael Raphael Bujotzek, Hendrik Damm, Jannis Nagel, and Christoph M. Friedrich
 * [Improving Sentence Boundary Detection for Spoken Language Transcripts](https://www.aclweb.org/anthology/2020.lrec-1.878/) - Ines Rehbein, Josef Ruppenhofer, Thomas Schmidt
 * [A New Resource for German Causal Language](https://www.aclweb.org/anthology/2020.lrec-1.731/) - Ines Rehbein, Josef Ruppenhofer
 * [KUISAIL at SemEval-2020 Task 12: BERT-CNN for Offensive Speech Identification in Social Media](https://arxiv.org/abs/2007.13184) - Ali Safaya, Moutasem Abdullatif, Deniz Yuret
