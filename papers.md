@@ -18,7 +18,10 @@ one of our trained models. Thanks for using our models 🤗
 * [UPB at GermEval-2020 Task 3: Assessing Summaries for German Texts using BERTScore and Sentence-BERT](http://ceur-ws.org/Vol-2624/germeval-task3-paper2.pdf) - Andrei Paraschiv, Dumitru-Clementin Cercel
 * [Improving Sentence Boundary Detection for Spoken Language Transcripts](https://www.aclweb.org/anthology/2020.lrec-1.878/) - Ines Rehbein, Josef Ruppenhofer, Thomas Schmidt
 * [A New Resource for German Causal Language](https://www.aclweb.org/anthology/2020.lrec-1.731/) - Ines Rehbein, Josef Ruppenhofer
+* [KUISAIL at SemEval-2020 Task 12: BERT-CNN for Offensive Speech Identification in Social Media](https://arxiv.org/abs/2007.13184) - Ali Safaya, Moutasem Abdullatif, Deniz Yuret
+* [Pre-training Polish Transformer-based Language Models at Scale](https://arxiv.org/abs/2006.04229) - Sławomir Dadas, Michał Perełkiewicz, Rafał Poświata
 * [An Evaluation of Recent Neural Sequence Tagging Models in Turkish Named Entity Recognition](https://arxiv.org/abs/2005.07692) - Gizem Aras, Didem Makaroglu, Seniz Demir, Altan Cakir
+* [Use of Machine Translation to Obtain Labeled Datasets for Resource-Constrained Languages](https://arxiv.org/abs/2004.14963) - Emrah Budur, Rıza Özçelik, Tunga Güngör, Christopher Potts
 * [Evaluating Transformer-Based Multilingual Text Classification](https://arxiv.org/abs/2004.13939) - Sophie Groenwold, Samhita Honnavalli, Lily Ou, Aesha Parekh, Sharon Levy, Diba Mirza, William Yang Wang
 * [Chart-based Zero-shot Constituency Parsing on Multiple Languages](https://arxiv.org/abs/2004.13805) - Taeuk Kim, Bowen Li, Sang-goo Lee
 * [A Systematic Analysis of Morphological Content in BERT Models for Multiple Languages](https://arxiv.org/abs/2004.03032) - Daniel Edmiston
