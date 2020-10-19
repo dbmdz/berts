@@ -3,6 +3,8 @@
 This section (without any claim to comprehensiveness) lists papers, that uses
 one of our trained models. Thanks for using our models 🤗
 
+* [XL-WiC: A Multilingual Benchmark for Evaluating Semantic Contextualization](https://arxiv.org/abs/2010.06478) - Alessandro Raganato, Tommaso Pasini, Jose Camacho-Collados, Mohammad Taher Pilehvar
+* [X-FACTR: Multilingual Factual Knowledge Retrieval from Pretrained Language Models](https://arxiv.org/abs/2010.06189) - Zhengbao Jiang, Antonios Anastasopoulos, Jun Araki, Haibo Ding, Graham Neubig
 * [Probing Pretrained Language Models for Lexical Semantics](https://arxiv.org/abs/2010.05731) - Ivan Vulić, Edoardo Maria Ponti, Robert Litschko, Goran Glavaš, Anna Korhonen
 * [Detecting Foodborne Illness Complaints in Multiple Languages Using English Annotations Only](https://arxiv.org/abs/2010.05194) - Ziyi Liu, Giannis Karamanolakis, Daniel Hsu, Luis Gravano
 * [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/abs/2010.05006) - Xinyu Wang, Yong Jiang, Nguyen Bach, Tao Wang, Zhongqiang Huang, Fei Huang, Kewei Tu
