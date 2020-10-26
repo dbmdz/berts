@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 26.10.2020: In collaboration with [Branden Chan](https://github.com/brandenchan) and [Timo Möller](https://github.com/Timoeller) from [deepset](https://deepset.ai/) we've trained larger language models for German. See our [paper](https://arxiv.org/abs/2010.10906) for more information!
 * 12.05.2020: Public release of small and base ELECTRA models for Turkish
 * 25.03.2020: Public release of *BERTurk* uncased model and *BERTurk* models with larger vocab size (128k, cased and uncased)
 * 11.03.2020: Public release of cased distilled BERT model for Turkish: *DistilBERTurk*
