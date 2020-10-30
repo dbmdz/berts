@@ -3,6 +3,7 @@
 This section (without any claim to comprehensiveness) lists papers, that uses
 one of our trained models. Thanks for using our models 🤗
 
+* [Graph-Based Universal Dependency Parsing in the Age of the Transformer: What Works, and What Doesn't](https://arxiv.org/abs/2010.12699) - Stefan Grünewald, Annemarie Friedrich, Jonas Kuhn
 * [BRUMS at SemEval-2020 Task 12 : Transformer based Multilingual Offensive Language Identification in Social Media](https://arxiv.org/abs/2010.06278) - Tharindu Ranasinghe, Hansi Hettiarachchi
 * [XL-WiC: A Multilingual Benchmark for Evaluating Semantic Contextualization](https://arxiv.org/abs/2010.06478) - Alessandro Raganato, Tommaso Pasini, Jose Camacho-Collados, Mohammad Taher Pilehvar
 * [X-FACTR: Multilingual Factual Knowledge Retrieval from Pretrained Language Models](https://arxiv.org/abs/2010.06189) - Zhengbao Jiang, Antonios Anastasopoulos, Jun Araki, Haibo Ding, Graham Neubig
