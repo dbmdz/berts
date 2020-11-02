@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 02.11.2020: Public release of Italian XXL ELECTRA model.
 * 26.10.2020: In collaboration with [Branden Chan](https://github.com/brandenchan) and [Timo Möller](https://github.com/Timoeller) from [deepset](https://deepset.ai/) we've trained larger language models for German. See our [paper](https://arxiv.org/abs/2010.10906) for more information!
 * 12.05.2020: Public release of small and base ELECTRA models for Turkish
 * 25.03.2020: Public release of *BERTurk* uncased model and *BERTurk* models with larger vocab size (128k, cased and uncased)
@@ -85,23 +86,28 @@ vocab size specified in `config.json`. However, the model is working and all
 evaluations were done under those circumstances.
 See [this issue](https://github.com/dbmdz/berts/issues/7) for more information.
 
+The Italian ELECTRA model was trained on the "XXL" corpus for 1M steps in total using a batch
+size of 128. We pretty much following the ELECTRA training procedure as used for
+[BERTurk](https://github.com/stefan-it/turkish-bert/tree/master/electra).
+
 ## Model weights
 
 Currently only PyTorch-[Transformers](https://github.com/huggingface/transformers)
 compatible weights are available. If you need access to TensorFlow checkpoints,
 please raise an issue!
 
-| Model                                   | Downloads
-| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------
-| `dbmdz/bert-base-italian-cased`         | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-italian-cased/config.json)       • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-italian-cased/pytorch_model.bin)       • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-italian-cased/vocab.txt)
-| `dbmdz/bert-base-italian-uncased`       | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-italian-uncased/config.json)     • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-italian-uncased/pytorch_model.bin)     • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-italian-uncased/vocab.txt)
-| `dbmdz/bert-base-italian-xxl-cased`     | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-cased/config.json)   • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-cased/pytorch_model.bin)   • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-cased/vocab.txt)
-| `dbmdz/bert-base-italian-xxl-uncased`   | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-uncased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-uncased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-uncased/vocab.txt)
+| Model                                                | Downloads
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------
+| `dbmdz/bert-base-italian-cased`                      | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-italian-cased/config.json)                                               • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-italian-cased/pytorch_model.bin)                      • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-italian-cased/vocab.txt)
+| `dbmdz/bert-base-italian-uncased`                    | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-italian-uncased/config.json)                                             • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-italian-uncased/pytorch_model.bin)                    • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-italian-uncased/vocab.txt)
+| `dbmdz/bert-base-italian-xxl-cased`                  | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-cased/config.json)                                           • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-cased/pytorch_model.bin)                  • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-cased/vocab.txt)
+| `dbmdz/bert-base-italian-xxl-uncased`                | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-uncased/config.json)                                         • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-uncased/pytorch_model.bin)                • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-italian-xxl-uncased/vocab.txt)
+| `dbmdz/electra-base-italian-xxl-cased-discriminator` | [`config.json`](https://s3.amazonaws.com/models.huggingface.co/bert/dbmdz/electra-base-italian-xxl-cased-discriminator/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/electra-base-italian-xxl-cased-discriminator/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/electra-base-italian-xxl-cased-discriminator/vocab.txt)
 
 ## Results
 
 For results on downstream tasks like NER or PoS tagging, please refer to
-[this repository](https://github.com/stefan-it/fine-tuned-berts-seq).
+[this repository](https://github.com/stefan-it/italian-bertelectra).
 
 ## Usage
 
