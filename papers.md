@@ -3,6 +3,8 @@
 This section (without any claim to comprehensiveness) lists papers, that uses
 one of our trained models. Thanks for using our models 🤗
 
+* [BERT-JAM: Boosting BERT-Enhanced Neural Machine Translation with Joint Attention](https://arxiv.org/abs/2011.04266) - Zhebin Zhang, Sai Wu, Dawei Jiang, Gang Chen
+* [NLP-CIC @ PRELEARN: Mastering prerequisites relations, from handcrafted features to embeddings](https://arxiv.org/abs/2011.03760) - Jason Angel, Segun Taofeek Aroyehun, Alexander Gelbukh
 * [Unmasking Contextual Stereotypes: Measuring and Mitigating BERT's Gender Bias](https://arxiv.org/abs/2010.14534) - Marion Bartl, Malvina Nissim, Albert Gatt
 * [Graph-Based Universal Dependency Parsing in the Age of the Transformer: What Works, and What Doesn't](https://arxiv.org/abs/2010.12699) - Stefan Grünewald, Annemarie Friedrich, Jonas Kuhn
 * [BRUMS at SemEval-2020 Task 12 : Transformer based Multilingual Offensive Language Identification in Social Media](https://arxiv.org/abs/2010.06278) - Tharindu Ranasinghe, Hansi Hettiarachchi
