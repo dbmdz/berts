@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 11.11.2020: Public release of Ukrainian ELECTRA model.
 * 02.11.2020: Public release of Italian XXL ELECTRA model.
 * 26.10.2020: In collaboration with [Branden Chan](https://github.com/brandenchan) and [Timo Möller](https://github.com/Timoeller) from [deepset](https://deepset.ai/) we've trained larger language models for German. See our [paper](https://arxiv.org/abs/2010.10906) for more information!
 * 12.05.2020: Public release of small and base ELECTRA models for Turkish
@@ -246,6 +247,47 @@ from transformers import AutoModelWithLMHead, AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("dbmdz/electra-base-turkish-cased-discriminator")
 model = AutoModelWithLMHead.from_pretrained("dbmdz/electra-base-turkish-cased-discriminator")
+```
+
+# Ukrainian ELECTRA
+
+The source data for the Ukrainian ELECTRA model consists of two corpora:
+
+* Recent Wikipedia dump
+* Deduplicated Ukrainian part from the [OSCAR](https://oscar-corpus.com/) corpus
+
+The final training corpus has a size of 30GB and consits of exactly 2,402,761,324 tokens.
+
+Detailed information about the data and pretraining steps can be found in
+[this repository](https://github.com/stefan-it/ukrainian-electra).
+
+## Model weights
+
+Currently only PyTorch-[Transformers](https://github.com/huggingface/transformers)
+compatible weights are available. If you need access to TensorFlow checkpoints,
+please raise an issue!
+
+| Model                                              | Downloads
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------
+| `dbmdz/electra-base-ukrainian-cased-discriminator` | See [model hub](https://huggingface.co/dbmdz/electra-base-ukrainian-cased-discriminator/tree/main)
+| `dbmdz/electra-base-ukrainian-cased-generator`     | See [model hub](https://huggingface.co/dbmdz/electra-base-ukrainian-cased-generator/tree/main)
+
+## Results
+
+For results on PoS tagging and NER downstream tasks, please refer to [this repository](https://github.com/stefan-it/ukrainian-electra).
+
+## Usage
+
+With Transformers >= 2.3 our Ukrainian ELECTRA model can be loaded like:
+
+```python
+from transformers import AutoModel, AutoTokenizer
+
+model_name = "dbmdz/electra-base-ukrainian-cased-discriminator"
+
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+model = AutoModelWithLMHead.from_pretrained(model_name)
 ```
 
 # License
