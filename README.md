@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 15.11.2020: Public release of a German GPT-2 model.
 * 11.11.2020: Public release of Ukrainian ELECTRA model.
 * 02.11.2020: Public release of Italian XXL ELECTRA model.
 * 26.10.2020: In collaboration with [Branden Chan](https://github.com/brandenchan) and [Timo Möller](https://github.com/Timoeller) from [deepset](https://deepset.ai/) we've trained larger language models for German. See our [paper](https://arxiv.org/abs/2010.10906) for more information!
@@ -288,6 +289,42 @@ model_name = "dbmdz/electra-base-ukrainian-cased-discriminator"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 model = AutoModelWithLMHead.from_pretrained(model_name)
+```
+
+# German GPT-2 model
+
+The German GPT-2 model is meant to be an entry point for fine-tuning on other texts, and it is definitely not as good or "dangerous"
+as the English GPT-3 model.
+
+For training we use pretty much the same corpora as used for training the DBMDZ BERT model. We created a 52K byte-level BPE vocab based
+on the training corpora.
+
+The model was trained on one TPU over the whole training corpus for three epochs.
+
+Detailed information can be found in [this repository](https://github.com/stefan-it/german-gpt2).
+
+## Model weights
+
+In addition to the German GPT-2 model, we release a GPT-2 model, that was fine-tuned on a normalized version of Faust I and II.
+
+| Model                     | Downloads
+| ------------------------- | --------------------
+| `dbmdz/german-gpt2`       | See [model hub](https://huggingface.co/dbmdz/german-gpt2/tree/main)
+| `dbmdz/german-gpt2-faust` | See [model hub](https://huggingface.co/dbmdz/german-gpt2-faust/tree/main)
+
+## Usage
+
+With Transformers >= 2.3 our German GPT-2 model can be used for text generation:
+
+```python
+from transformers import pipeline
+
+pipe = pipeline('text-generation', model="dbmdz/german-gpt2",
+                 tokenizer="dbmdz/german-gpt2", config={'max_length':800})
+
+text = pipe2("Der Sinn des Lebens ist es")[0]["generated_text"]
+
+print(text)
 ```
 
 # License
