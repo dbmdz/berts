@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 16.11.2020: Public release of French Europeana BERT and ELECTRA models.
 * 15.11.2020: Public release of a German GPT-2 model.
 * 11.11.2020: Public release of Ukrainian ELECTRA model.
 * 02.11.2020: Public release of Italian XXL ELECTRA model.
@@ -132,7 +133,7 @@ tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-italian-xxl-cased")
 model = AutoModel.from_pretrained("dbmdz/bert-base-italian-xxl-cased")
 ```
 
-# German Europeana BERT
+# German Europeana BERT and ELECTRA
 
 We use the open source [Europeana newspapers](http://www.europeana-newspapers.eu/)
 that were provided by *The European Library*. The final
@@ -147,10 +148,12 @@ Currently only PyTorch-[Transformers](https://github.com/huggingface/transformer
 compatible weights are available. If you need access to TensorFlow checkpoints,
 please raise an issue!
 
-| Model                                      | Downloads
-| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------
-| `dbmdz/bert-base-german-europeana-cased`   | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-cased/config.json)   • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-cased/pytorch_model.bin)   • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-cased/vocab.txt)
-| `dbmdz/bert-base-german-europeana-uncased` | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-uncased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-uncased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-german-europeana-uncased/vocab.txt)
+| Model                                                     | Downloads
+| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------
+| `dbmdz/bert-base-german-europeana-cased`                  | See [model hub](https://huggingface.co/dbmdz/bert-base-german-europeana-cased)
+| `dbmdz/bert-base-german-europeana-uncased`                | See [model hub](https://huggingface.co/dbmdz/bert-base-german-europeana-uncased)
+| `dbmdz/electra-base-german-europeana-cased-discriminator` | See [model hub](https://huggingface.co/dbmdz/electra-base-german-europeana-cased-discriminator)
+| `dbmdz/electra-base-german-europeana-cased-generator`     | See [model hub](https://huggingface.co/dbmdz/electra-base-german-europeana-cased-generator)
 
 ## Results
 
@@ -174,6 +177,47 @@ from transformers import AutoModel, AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-german-europeana-uncased")
 model = AutoModel.from_pretrained("dbmdz/bert-base-german-europeana-uncased")
+```
+
+# French Europeana BERT and ELECTRA
+
+We use the open source [Europeana newspapers](http://www.europeana-newspapers.eu/)
+that were provided by *The European Library*. The final
+training corpus has a size of 63GB and consists of 11,052,528,456 tokens.
+
+Detailed information about the data and pretraining steps can be found in
+[this repository](https://github.com/stefan-it/europeana-bert).
+
+## Model weights
+
+| Model                                                     | Downloads
+| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------
+| `dbmdz/bert-base-french-europeana-cased`                  | See [model hub](https://huggingface.co/dbmdz/bert-base-french-europeana-cased)
+| `dbmdz/electra-base-french-europeana-cased-discriminator` | See [model hub](https://huggingface.co/dbmdz/electra-base-french-europeana-cased-discriminator)
+| `dbmdz/electra-base-french-europeana-cased-generator`     | See [model hub](https://huggingface.co/dbmdz/electra-base-french-europeana-cased-generator)
+
+## Usage
+
+With Transformers >= 2.3 our French Europeana BERT and ELECTRA models can be loaded like:
+
+```python
+from transformers import AutoModel, AutoTokenizer
+
+model_name = "dbmdz/bert-base-french-europeana-cased"
+
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModel.from_pretrained(model_name)
+```
+
+The ELECTRA (discriminator) model can be used with:
+
+```python
+from transformers import AutoModel, AutoTokenizer
+
+model_name = "dbmdz/electra-base-french-europeana-cased-discriminator"
+
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModel.from_pretrained(model_name)
 ```
 
 # Turkish BERT: BERTurk, DistilBERTurk and ELECTRA
