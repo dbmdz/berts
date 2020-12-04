@@ -3,6 +3,7 @@
 This section (without any claim to comprehensiveness) lists papers, that uses
 one of our trained models. Thanks for using our models 🤗
 
+* [GottBERT: a pure German Language Model](https://arxiv.org/abs/2012.02110) - Raphael Scheible, Fabian Thomczyk, Patric Tippmann, Victor Jaravine, Martin Boeker
 * [Flood Detection via Twitter Streams using Textual and Visual Features](https://arxiv.org/abs/2011.14944) - Firoj Alam, Zohaib Hassan, Kashif Ahmad, Asma Gul, Michael Reiglar, Nicola Conci, Ala AL-Fuqaha
 * [CL-IMS @ DIACR-Ita: Volente o Nolente: BERT does not outperform SGNS on Semantic Change Detection](https://arxiv.org/abs/2011.07247) - Severin Laicher, Gioia Baldissin, Enrique Castañeda, Dominik Schlechtweg, Sabine Schulte im Walde
 * [BERT-JAM: Boosting BERT-Enhanced Neural Machine Translation with Joint Attention](https://arxiv.org/abs/2011.04266) - Zhebin Zhang, Sai Wu, Dawei Jiang, Gang Chen
