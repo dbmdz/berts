@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 06.02.2020: Public release of German Europeana ConvBERT model.
 * 16.11.2020: Public release of French Europeana BERT and ELECTRA models.
 * 15.11.2020: Public release of a German GPT-2 model.
 * 11.11.2020: Public release of Ukrainian ELECTRA model.
@@ -144,9 +145,7 @@ Detailed information about the data and pretraining steps can be found in
 
 ## Model weights
 
-Currently only PyTorch-[Transformers](https://github.com/huggingface/transformers)
-compatible weights are available. If you need access to TensorFlow checkpoints,
-please raise an issue!
+The following models are available from the Hugging Face model hub:
 
 | Model                                                     | Downloads
 | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------
@@ -154,6 +153,7 @@ please raise an issue!
 | `dbmdz/bert-base-german-europeana-uncased`                | See [model hub](https://huggingface.co/dbmdz/bert-base-german-europeana-uncased)
 | `dbmdz/electra-base-german-europeana-cased-discriminator` | See [model hub](https://huggingface.co/dbmdz/electra-base-german-europeana-cased-discriminator)
 | `dbmdz/electra-base-german-europeana-cased-generator`     | See [model hub](https://huggingface.co/dbmdz/electra-base-german-europeana-cased-generator)
+| `dbmdz/convbert-base-german-europeana-cased`              | See [model hub](https://huggingface.co/dbmdz/convbert-base-german-europeana-cased)
 
 ## Results
 
