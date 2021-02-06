@@ -5,7 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
-* 06.02.2020: Public release of German Europeana ConvBERT model.
+* 06.02.2020: Public release of German Europeana DistilBERT and ConvBERT models.
 * 16.11.2020: Public release of French Europeana BERT and ELECTRA models.
 * 15.11.2020: Public release of a German GPT-2 model.
 * 11.11.2020: Public release of Ukrainian ELECTRA model.
@@ -134,7 +134,7 @@ tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-italian-xxl-cased")
 model = AutoModel.from_pretrained("dbmdz/bert-base-italian-xxl-cased")
 ```
 
-# German Europeana BERT and ELECTRA
+# German Europeana BERT, DistilBERT, ELECTRA and ConvBERT
 
 We use the open source [Europeana newspapers](http://www.europeana-newspapers.eu/)
 that were provided by *The European Library*. The final
@@ -154,6 +154,7 @@ The following models are available from the Hugging Face model hub:
 | `dbmdz/electra-base-german-europeana-cased-discriminator` | See [model hub](https://huggingface.co/dbmdz/electra-base-german-europeana-cased-discriminator)
 | `dbmdz/electra-base-german-europeana-cased-generator`     | See [model hub](https://huggingface.co/dbmdz/electra-base-german-europeana-cased-generator)
 | `dbmdz/convbert-base-german-europeana-cased`              | See [model hub](https://huggingface.co/dbmdz/convbert-base-german-europeana-cased)
+| `dbmdz/distilbert-base-german-europeana-cased`            | See [model hub](https://huggingface.co/dbmdz/distilbert-base-german-europeana-cased)
 
 ## Results
 
