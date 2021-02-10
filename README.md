@@ -5,7 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
-* 06.02.2020: Public release of German Europeana DistilBERT and ConvBERT models.
+* 06.02.2021: Public release of German Europeana DistilBERT and ConvBERT models.
 * 16.11.2020: Public release of French Europeana BERT and ELECTRA models.
 * 15.11.2020: Public release of a German GPT-2 model.
 * 11.11.2020: Public release of Ukrainian ELECTRA model.
