@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 16.03.2021: Public release of ConvBERT model for Turkish: *ConvBERTurk*.
 * 06.02.2021: Public release of German Europeana DistilBERT and ConvBERT models.
 * 16.11.2020: Public release of French Europeana BERT and ELECTRA models.
 * 15.11.2020: Public release of a German GPT-2 model.
@@ -221,7 +222,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name)
 ```
 
-# Turkish BERT: BERTurk, DistilBERTurk and ELECTRA
+# Turkish BERT: BERTurk, DistilBERTurk, ELECTRA and ConvBERTurk
 
 BERTurk are community-driven cased models for Turkish.
 
@@ -244,7 +245,10 @@ We also trained small and base ELECTRA models. ELECTRA is a new method for self-
 representation learning. More details about ELECTRA can be found in the
 [ICLR paper](https://openreview.net/forum?id=r1xMH1BtvB).
 
-Evaluation of our ELECTRA models can be found in
+In addition to the BERT and ELECTRA based models, we also trained a ConvBERT model. The ConvBERT architecture is presented
+in the ["ConvBERT: Improving BERT with Span-based Dynamic Convolution"](https://arxiv.org/abs/2008.02496) paper.
+
+Evaluation of our models can be found in
 [this repository](https://github.com/stefan-it/turkish-bert/electra).
 
 ## Model weights
@@ -261,6 +265,7 @@ If you need access to TensorFlow checkpoints, please raise an issue!
 | `dbmdz/distilbert-base-turkish-cased`             | [`config.json`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/vocab.txt)
 | `dbmdz/electra-small-turkish-cased-discriminator` | [`config.json`](https://cdn.huggingface.co/dbmdz/electra-small-turkish-cased-discriminator/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/electra-small-turkish-cased-discriminator/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/electra-small-turkish-cased-discriminator/vocab.txt)
 | `dbmdz/electra-base-turkish-cased-discriminator`  | [`config.json`](https://cdn.huggingface.co/dbmdz/electra-base-turkish-cased-discriminator/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/electra-base-turkish-cased-discriminator/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/electra-base-turkish-cased-discriminator/vocab.txt)
+| `dbmdz/convbert-base-turkish-cased`               | [`config.json](https://huggingface.co/dbmdz/convbert-base-turkish-cased/resolve/main/config.json) • [`pytorch_model.bin`]() • [`vocab.txt`](https://huggingface.co/dbmdz/convbert-base-turkish-cased/resolve/main/vocab.txt)
 
 ## Results
 
@@ -293,6 +298,15 @@ from transformers import AutoModelWithLMHead, AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("dbmdz/electra-base-turkish-cased-discriminator")
 model = AutoModelWithLMHead.from_pretrained("dbmdz/electra-base-turkish-cased-discriminator")
+```
+
+Our ConvBERT model can be used with Transformers >= 4.3 and can be loaded with:
+
+```python
+from transformers import AutoModelWithLMHead, AutoTokenizer
+
+tokenizer = AutoTokenizer.from_pretrained("dbmdz/convbert-base-turkish-cased")
+model = AutoModelWithLMHead.from_pretrained("dbmdz/convbert-base-turkish-cased")
 ```
 
 # Ukrainian ELECTRA
