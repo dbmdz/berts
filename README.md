@@ -5,7 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
-* 24.03.2021: Public release of Turkish ELECTRA model, trained on Turkish part of multilingual C4 corpus.
+* 24.06.2021: Public release of Turkish ELECTRA model, trained on Turkish part of multilingual C4 corpus.
 * 16.03.2021: Public release of ConvBERT model for Turkish: *ConvBERTurk*.
 * 06.02.2021: Public release of German Europeana DistilBERT and ConvBERT models.
 * 16.11.2020: Public release of French Europeana BERT and ELECTRA models.
