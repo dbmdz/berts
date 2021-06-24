@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 24.03.2021: Public release of Turkish ELECTRA model, trained on Turkish part of multilingual C4 corpus.
 * 16.03.2021: Public release of ConvBERT model for Turkish: *ConvBERTurk*.
 * 06.02.2021: Public release of German Europeana DistilBERT and ConvBERT models.
 * 16.11.2020: Public release of French Europeana BERT and ELECTRA models.
@@ -251,21 +252,22 @@ in the ["ConvBERT: Improving BERT with Span-based Dynamic Convolution"](https://
 Evaluation of our models can be found in
 [this repository](https://github.com/stefan-it/turkish-bert/electra).
 
+We've also trained an ELECTRA (cased) model on the recently released Turkish part of the
+[multiligual C4 (mC4) corpus](https://github.com/allenai/allennlp/discussions/5265) from the AI2 team.
+
+After filtering documents with a broken encoding, the training corpus has a size of 242GB resulting
+in 31,240,963,926 tokens.
+
 ## Model weights
 
-[Transformers](https://github.com/huggingface/transformers) compatible weights are available.
-If you need access to TensorFlow checkpoints, please raise an issue!
+All trained models can be used from the [DBMDZ](https://github.com/dbmdz) Hugging Face [model hub page](https://huggingface.co/dbmdz)
+using their model name. The following models are available:
 
-| Model                                             | Downloads
-| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------
-| `dbmdz/bert-base-turkish-cased`                   | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-cased/vocab.txt)
-| `dbmdz/bert-base-turkish-uncased`                 | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-uncased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-uncased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-uncased/vocab.txt)
-| `dbmdz/bert-base-turkish-128k-cased`              | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-cased/vocab.txt)
-| `dbmdz/bert-base-turkish-128k-uncased`            | [`config.json`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-uncased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-uncased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/bert-base-turkish-128k-uncased/vocab.txt)
-| `dbmdz/distilbert-base-turkish-cased`             | [`config.json`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/distilbert-base-turkish-cased/vocab.txt)
-| `dbmdz/electra-small-turkish-cased-discriminator` | [`config.json`](https://cdn.huggingface.co/dbmdz/electra-small-turkish-cased-discriminator/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/electra-small-turkish-cased-discriminator/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/electra-small-turkish-cased-discriminator/vocab.txt)
-| `dbmdz/electra-base-turkish-cased-discriminator`  | [`config.json`](https://cdn.huggingface.co/dbmdz/electra-base-turkish-cased-discriminator/config.json) • [`pytorch_model.bin`](https://cdn.huggingface.co/dbmdz/electra-base-turkish-cased-discriminator/pytorch_model.bin) • [`vocab.txt`](https://cdn.huggingface.co/dbmdz/electra-base-turkish-cased-discriminator/vocab.txt)
-| `dbmdz/convbert-base-turkish-cased`               | [`config.json](https://huggingface.co/dbmdz/convbert-base-turkish-cased/resolve/main/config.json) • [`pytorch_model.bin`]() • [`vocab.txt`](https://huggingface.co/dbmdz/convbert-base-turkish-cased/resolve/main/vocab.txt)
+* *BERTurk* models with 32k vocabulary: `dbmdz/bert-base-turkish-cased` and `dbmdz/bert-base-turkish-uncased`
+* *BERTurk* models with 128k vocabulary: `dbmdz/bert-base-turkish-128k-cased` and `dbmdz/bert-base-turkish-128k-uncased`
+* *ELECTRA* small and base cased models (discriminator): `dbmdz/electra-small-turkish-cased-discriminator` and `dbmdz/electra-base-turkish-cased-discriminator`
+* *ELECTRA* base cased model, trained on Turkish part of mC4 corpus (discriminator): `dbmdz/electra-small-turkish-mc4-cased-discriminator`
+* *ConvBERTurk* model with 32k vocabulary: `dbmdz/convbert-base-turkish-cased`
 
 ## Results
 
@@ -298,6 +300,15 @@ from transformers import AutoModelWithLMHead, AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("dbmdz/electra-base-turkish-cased-discriminator")
 model = AutoModelWithLMHead.from_pretrained("dbmdz/electra-base-turkish-cased-discriminator")
+```
+
+and
+
+```python
+from transformers import AutoModelWithLMHead, AutoTokenizer
+
+tokenizer = AutoTokenizer.from_pretrained("dbmdz/electra-base-turkish-mc4-cased-discriminator")
+model = AutoModelWithLMHead.from_pretrained("dbmdz/electra-base-turkish-mc4-cased-discriminator")
 ```
 
 Our ConvBERT model can be used with Transformers >= 4.3 and can be loaded with:
