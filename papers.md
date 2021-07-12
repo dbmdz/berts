@@ -3,6 +3,23 @@
 This section (without any claim to comprehensiveness) lists papers, that uses
 one of our trained models. Thanks for using our models 🤗
 
+* [Enhanced Universal Dependency Parsing with Automated Concatenation of Embeddings](https://arxiv.org/abs/2107.02416) - Xinyu Wang, Zixia Jia, Yong Jiang, Kewei Tu
+* [BERTTune: Fine-Tuning Neural Machine Translation with BERTScore](https://arxiv.org/abs/2106.02208) - Inigo Jauregi Unanue, Jacob Parnell, Massimo Piccardi
+* [Auto-tagging of Short Conversational Sentences using Transformer Methods](https://arxiv.org/abs/2106.01735) - D. Emre Taşar, Şükrü Ozan, Umut Özdil, M. Fatih Akca, Oğuzhan Ölmez, Semih Gülüm, Seçilay Kutal, Ceren Belhan
+* [Evaluating the Efficacy of Summarization Evaluation across Languages](https://arxiv.org/abs/2106.01478) - Fajri Koto, Jey Han Lau, Timothy Baldwin
+* [Uncovering Constraint-Based Behavior in Neural Models via Targeted Fine-Tuning](https://arxiv.org/abs/2106.01207) - Forrest Davis, Marten van Schijndel
+* [John praised Mary because he? Implicit Causality Bias and Its Interaction with Explicit Cues in LMs](https://arxiv.org/abs/2106.01060) - Yova Kementchedjhieva, Mark Anderson, Anders Søgaard
+* [Learning Domain-Specialised Representations for Cross-Lingual Biomedical Entity Linking](https://arxiv.org/abs/2105.14398) - Fangyu Liu, Ivan Vuli?, Anna Korhonen, Nigel Collier
+* [Adapting Monolingual Models: Data can be Scarce when Language Similarity is High](https://arxiv.org/abs/2105.02855) - Wietse de Vries, Martijn Bartelds, Malvina Nissim, Martijn Wieling
+* [RECKONition: a NLP-based system for Industrial Accidents at Work Prevention](https://arxiv.org/abs/2104.14150) - Patrizia Agnello, Silvia M. Ansaldi, Emilia Lenzi, Alessio Mongelluzzo, Manuel Roveri
+* [Discourse Probing of Pretrained Language Models](https://arxiv.org/abs/2104.05882) - Fajri Koto, Jey Han Lau, Timothy Baldwin
+* [Statistically significant detection of semantic shifts using contextual word embeddings](https://arxiv.org/abs/2104.03776) - Yang Liu, Alan Medlar, Dorota Glowacka
+* [Spotify at TREC 2020: Genre-Aware Abstractive Podcast Summarization](https://arxiv.org/abs/2104.03343) - Rezvaneh Rezapour, Sravana Reddy, Ann Clifton, Rosie Jones
+* [Better Neural Machine Translation by Extracting Linguistic Information from BERT](https://arxiv.org/abs/2104.02831) - Hassan S. Shavarani, Anoop Sarkar
+* [Czert -- Czech BERT-like Model for Language Representation](https://arxiv.org/abs/2103.13031) - Jakub Sido, Ondřej Pražák, Pavel Přibáň, Jan Pašek, Michal Seják, Miloslav Konopík
+* [Re-Evaluating GermEval17 Using German Pre-Trained Language Models](https://arxiv.org/abs/2102.12330) - M. Aßenmacher, A. Corvonato, C. Heumann
+* [Multilingual Answer Sentence Reranking via Automatically Translated Data](https://arxiv.org/abs/2102.10250) - Thuy Vu, Alessandro Moschitti
+* [How Good is Your Tokenizer? On the Monolingual Performance of Multilingual Language Models](https://arxiv.org/abs/2012.15613) - Phillip Rust, Jonas Pfeiffer, Ivan Vulić, Sebastian Ruder, Iryna Gurevych
 * [Using BERT for Qualitative Content Analysis in Psychosocial Online Counseling](https://www.aclweb.org/anthology/2020.nlpcss-1.2/) - Philipp Grandeit, Carolyn Haberkern, Maximiliane Lang, Jens Albrecht, Robert Lehmann
 * [GottBERT: a pure German Language Model](https://arxiv.org/abs/2012.02110) - Raphael Scheible, Fabian Thomczyk, Patric Tippmann, Victor Jaravine, Martin Boeker
 * [Flood Detection via Twitter Streams using Textual and Visual Features](https://arxiv.org/abs/2011.14944) - Firoj Alam, Zohaib Hassan, Kashif Ahmad, Asma Gul, Michael Reiglar, Nicola Conci, Ala AL-Fuqaha
