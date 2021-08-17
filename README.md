@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 17.08.2021: Public release of re-trained German GPT-2 model.
 * 24.06.2021: Public release of Turkish ELECTRA model, trained on Turkish part of multilingual C4 corpus.
 * 16.03.2021: Public release of ConvBERT model for Turkish: *ConvBERTurk*.
 * 06.02.2021: Public release of German Europeana DistilBERT and ConvBERT models.
@@ -366,21 +367,23 @@ model = AutoModelWithLMHead.from_pretrained(model_name)
 The German GPT-2 model is meant to be an entry point for fine-tuning on other texts, and it is definitely not as good or "dangerous"
 as the English GPT-3 model.
 
-For training we use pretty much the same corpora as used for training the DBMDZ BERT model. We created a 52K byte-level BPE vocab based
+For training we use pretty much the same corpora as used for training the DBMDZ BERT model. We created a 50K byte-level BPE vocab based
 on the training corpora.
 
-The model was trained on one TPU over the whole training corpus for three epochs.
+The model was trained on one v3-8 TPU over the whole training corpus for 20 epochs.
 
 Detailed information can be found in [this repository](https://github.com/stefan-it/german-gpt2).
+
+**Note**: we have released a re-trained version of this model with better results!
 
 ## Model weights
 
 In addition to the German GPT-2 model, we release a GPT-2 model, that was fine-tuned on a normalized version of Faust I and II.
 
-| Model                     | Downloads
-| ------------------------- | --------------------
-| `dbmdz/german-gpt2`       | See [model hub](https://huggingface.co/dbmdz/german-gpt2/tree/main)
-| `dbmdz/german-gpt2-faust` | See [model hub](https://huggingface.co/dbmdz/german-gpt2-faust/tree/main)
+| Model                                 | Downloads
+| ------------------------------------- | --------------------
+| `dbmdz/german-gpt2`                   | See [model hub](https://huggingface.co/dbmdz/german-gpt2/tree/main)
+| `dbmdz/german-gpt2-faust` (old model) | See [model hub](https://huggingface.co/dbmdz/german-gpt2-faust/tree/main)
 
 ## Usage
 
