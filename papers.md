@@ -3,6 +3,25 @@
 This section (without any claim to comprehensiveness) lists papers, that uses
 one of our trained models. Thanks for using our models 🤗
 
+* [Investigation on Data Adaptation Techniques for Neural Named Entity Recognition](https://aclanthology.org/2021.acl-srw.1/) - Evgeniia Tokarchuk, David Thulke, Weiyue Wang, Christian Dugast, Hermann Ney
+* [Cross-Language Learning for Entity Matching](https://arxiv.org/abs/2110.03338) - Ralph Peeters, Christian Bizer
+* [ur-iw-hnt at GermEval 2021: An Ensembling Strategy with Multiple BERT Models](https://arxiv.org/abs/2110.02042) - Hoai Nam Tran, Udo Kruschwitz
+* [Electoral Programs of German Parties 2021: A Computational Analysis Of Their Comprehensibility and Likeability Based On SentiArt](https://arxiv.org/abs/2109.12500) - Arthur M. Jacobs, Annette Kinder
+* [Monolingual and Cross-Lingual Acceptability Judgments with the Italian CoLA corpus](https://arxiv.org/abs/2109.12053) - Daniela Trotta, Raffaele Guarasci, Elisa Leonardelli, Sara Tonelli
+* [Overview of the CLEF--2021 CheckThat! Lab on Detecting Check-Worthy Claims, Previously Fact-Checked Claims, and Fake News](https://arxiv.org/abs/2109.12987) - Preslav Nakov, Giovanni Da San Martino, Tamer Elsayed, Alberto Barrón-Cedeño, Rubén Míguez, Shaden Shaar, Firoj Alam, Fatima Haouari, Maram Hasanain, Watheq Mansour, Bayan Hamdan, Zien Sheikh Ali, Nikolay Babulkov, Alex Nikolov, Gautam Kishore Shahi, Julia Maria Struß, Thomas Mandl, Mucahid Kutlu, Yavuz Selim Kartal
+* [DisCoDisCo at the DISRPT2021 Shared Task: A System for Discourse Segmentation, Classification, and Connective Detection](https://arxiv.org/abs/2109.09777) - Luke Gessler, Shabnam Behzad, Yang Janet Liu, Siyao Peng, Yilun Zhu, Amir Zeldes
+* [UPV at CheckThat! 2021: Mitigating Cultural Differences for Identifying Multilingual Check-worthy Claims](https://arxiv.org/abs/2109.09232) - Ipek Baris Schlicht, Angel Felipe Magnossão de Paula, Paolo Rosso
+* [Does Summary Evaluation Survive Translation to Other Languages?](https://arxiv.org/abs/2109.08129) - Neslihan Iskender, Oleg Vasilyev, Tim Polzehl, John Bohannon, Sebastian Möller
+* [Introducing an Abusive Language Classification Framework for Telegram to Investigate the German Hater Community](https://arxiv.org/abs/2109.07346) - Maximilian Wich, Adrian Gorniak, Tobias Eder, Daniel Bartmann, Burak Enes Çakici, Georg Groh
+* [Improving Zero-shot Cross-lingual Transfer between Closely Related Languages by injecting Character-level Noise](https://arxiv.org/abs/2109.06772) - Improving Zero-shot Cross-lingual Transfer between Closely Related Languages by injecting Character-level Noise
+* [Mitigating Language-Dependent Ethnic Bias in BERT](https://arxiv.org/abs/2109.05704) - Jaimeen Ahn, Alice Oh
+* [Infusing Future Information into Monotonic Attention Through Language Models](https://arxiv.org/abs/2109.03121) - Mohd Abbas Zaidi, Sathish Indurthi, Beomseok Lee, Nikhil Kumar Lakumarapu, Sangha Kim
+* [Data Science Kitchen at GermEval 2021: A Fine Selection of Hand-Picked Features, Delivered Fresh from the Oven](https://arxiv.org/abs/2109.02383) - Niclas Hildebrandt, Benedikt Boenninghoff, Dennis Orth, Christopher Schymura
+* [MultiEURLEX -- A multi-lingual and multi-label legal document classification dataset for zero-shot cross-lingual transfer](https://arxiv.org/abs/2109.00904) - Ilias Chalkidis, Manos Fergadiotis, Ion Androutsopoulos
+* [Contrastive Language-Image Pre-training for the Italian Language](https://arxiv.org/abs/2108.08688) - Federico Bianchi, Giuseppe Attanasio, Raphael Pisoni, Silvia Terragni, Gabriele Sarti, Sri Lakshmi
+* [PyEuroVoc: A Tool for Multilingual Legal Document Classification with EuroVoc Descriptors](https://arxiv.org/abs/2108.01139) - Andrei-Marius Avram, Vasile Pais, Dan Tufis
+* [Transfer Learning for Mining Feature Requests and Bug Reports from Tweets and App Store Reviews](https://arxiv.org/abs/2108.00663) - Pablo Restrepo Henao, Jannik Fischbach, Dominik Spies, Julian Frattini, Andreas Vogelsang
+* [Accenture at CheckThat! 2021: Interesting claim identification and ranking with contextually sensitive lexical training data augmentation](https://arxiv.org/abs/2107.05684) - Evan Williams, Paul Rodrigues, Sieu Tran
 * [Enhanced Universal Dependency Parsing with Automated Concatenation of Embeddings](https://arxiv.org/abs/2107.02416) - Xinyu Wang, Zixia Jia, Yong Jiang, Kewei Tu
 * [BERTTune: Fine-Tuning Neural Machine Translation with BERTScore](https://arxiv.org/abs/2106.02208) - Inigo Jauregi Unanue, Jacob Parnell, Massimo Piccardi
 * [Auto-tagging of Short Conversational Sentences using Transformer Methods](https://arxiv.org/abs/2106.01735) - D. Emre Taşar, Şükrü Ozan, Umut Özdil, M. Fatih Akca, Oğuzhan Ölmez, Semih Gülüm, Seçilay Kutal, Ceren Belhan
