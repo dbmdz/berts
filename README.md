@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 18.11.2021: Public release of multilingual and monolingual Historic Language Models.
 * 24.09.2021: Public release of cased/uncased Turkish ELECTRA and ConvBERT models, trained on mC4 corpus.
 * 17.08.2021: Public release of re-trained German GPT-2 model.
 * 24.06.2021: Public release of Turkish ELECTRA model, trained on Turkish part of multilingual C4 corpus.
@@ -401,6 +402,27 @@ text = pipe2("Der Sinn des Lebens ist es")[0]["generated_text"]
 
 print(text)
 ```
+
+# Historic Language Models
+
+We release several BERT-based language models, incl. a multilingual Historic language models that includes
+German, French, English, Finnish and Swedish, as well monolingual Historic language models for English,
+Finnish and Swedish. The multilingual Historic language model was trained on 130GB of texts, extracted
+from Europeana Newspapers and British Library corpus.
+
+More details about our Historic Language Models can be found in
+[this repository](https://github.com/stefan-it/clef-hipe/blob/main/hlms.md).
+
+## Model weights
+
+All models are available on the Hugging Face model hub:
+
+| Model identifier                              | Model Hub link
+| --------------------------------------------- | --------------------------------------------------------------------------
+| `dbmdz/bert-base-historic-multilingual-cased` | [here](https://huggingface.co/dbmdz/bert-base-historic-multilingual-cased)
+| `dbmdz/bert-base-historic-english-cased`      | [here](https://huggingface.co/dbmdz/bert-base-historic-english-cased)
+| `dbmdz/bert-base-finnish-europeana-cased`     | [here](https://huggingface.co/dbmdz/bert-base-finnish-europeana-cased)
+| `dbmdz/bert-base-swedish-europeana-cased`     | [here](https://huggingface.co/dbmdz/bert-base-swedish-europeana-cased)
 
 # License
 
