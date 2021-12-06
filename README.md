@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 06.12.2021: Public release of smaller multilingual Historic Language Models.
 * 18.11.2021: Public release of multilingual and monolingual Historic Language Models.
 * 24.09.2021: Public release of cased/uncased Turkish ELECTRA and ConvBERT models, trained on mC4 corpus.
 * 17.08.2021: Public release of re-trained German GPT-2 model.
@@ -423,6 +424,15 @@ All models are available on the Hugging Face model hub:
 | `dbmdz/bert-base-historic-english-cased`      | [here](https://huggingface.co/dbmdz/bert-base-historic-english-cased)
 | `dbmdz/bert-base-finnish-europeana-cased`     | [here](https://huggingface.co/dbmdz/bert-base-finnish-europeana-cased)
 | `dbmdz/bert-base-swedish-europeana-cased`     | [here](https://huggingface.co/dbmdz/bert-base-swedish-europeana-cased)
+
+We also released smaller Historic Language Models:
+
+| Model identifier                                | Model Hub link
+| ----------------------------------------------- | ---------------------------------------------------------------------------
+| `dbmdz/bert-tiny-historic-multilingual-cased`   | [here](https://huggingface.co/dbmdz/bert-tiny-historic-multilingual-cased)
+| `dbmdz/bert-mini-historic-multilingual-cased`   | [here](https://huggingface.co/dbmdz/bert-mini-historic-multilingual-cased)
+| `dbmdz/bert-small-historic-multilingual-cased`  | [here](https://huggingface.co/dbmdz/bert-small-historic-multilingual-cased)
+| `dbmdz/bert-medium-historic-multilingual-cased` | [here](https://huggingface.co/dbmdz/bert-base-historic-multilingual-cased)
 
 # License
 
