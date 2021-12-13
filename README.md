@@ -5,6 +5,7 @@ Library open sources another BERT models 🎉
 
 # Changelog
 
+* 13.12.2021: Public release of Historic Language Model for Dutch.
 * 06.12.2021: Public release of smaller multilingual Historic Language Models.
 * 18.11.2021: Public release of multilingual and monolingual Historic Language Models.
 * 24.09.2021: Public release of cased/uncased Turkish ELECTRA and ConvBERT models, trained on mC4 corpus.
@@ -433,6 +434,23 @@ We also released smaller Historic Language Models:
 | `dbmdz/bert-mini-historic-multilingual-cased`   | [here](https://huggingface.co/dbmdz/bert-mini-historic-multilingual-cased)
 | `dbmdz/bert-small-historic-multilingual-cased`  | [here](https://huggingface.co/dbmdz/bert-small-historic-multilingual-cased)
 | `dbmdz/bert-medium-historic-multilingual-cased` | [here](https://huggingface.co/dbmdz/bert-base-historic-multilingual-cased)
+
+# Historic Dutch
+
+We train a language model on the
+[Delpher Corpus](https://www.delpher.nl/over-delpher/delpher-open-krantenarchief/download-teksten-kranten-1618-1879),
+that includes digitized texts from Dutch newspapers, ranging from 1618 to 1879.
+
+The total training corpus consists of 427,181,269 sentences and 3,509,581,683 tokens (counted via `wc`),
+resulting in a total corpus size of 21GB.
+
+## Model weights
+
+The following models for Historic Dutch are available on the Hugging Face Model Hub:
+
+| Model identifier                       | Model Hub link
+| -------------------------------------- | -------------------------------------------------------------------
+| `dbmdz/bert-base-historic-dutch-cased` | [here](https://huggingface.co/dbmdz/bert-base-historic-dutch-cased)
 
 # License
 
