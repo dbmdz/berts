@@ -444,6 +444,9 @@ that includes digitized texts from Dutch newspapers, ranging from 1618 to 1879.
 The total training corpus consists of 427,181,269 sentences and 3,509,581,683 tokens (counted via `wc`),
 resulting in a total corpus size of 21GB.
 
+More details about the Historic Dutch language model can be found in
+[this repository](https://github.com/stefan-it/delpher-lm).
+
 ## Model weights
 
 The following models for Historic Dutch are available on the Hugging Face Model Hub:
