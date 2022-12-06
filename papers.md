@@ -3,6 +3,35 @@
 This section (without any claim to comprehensiveness) lists papers, that uses
 one of our trained models. Thanks for using our models 🤗
 
+* [Towards automating Numerical Consistency Checks in Financial Reports](https://arxiv.org/abs/2211.06112) - Lars Hillebrand, Tobias Deußer, Tim Dilmaghani, Bernd Kliem, Rüdiger Loitz, Christian Bauckhage, Rafet Sifa
+* [Cross-lingual Transfer Learning for Check-worthy Claim Identification over Twitter
+](https://arxiv.org/abs/2211.05087) - Maram Hasanain, Tamer Elsayed
+* [Can Demographic Factors Improve Text Classification? Revisiting Demographic Adaptation in the Age of Transformers
+](https://arxiv.org/abs/2210.07362) - Chia-Chien Hung, Anne Lauscher, Dirk Hovy, Simone Paolo Ponzetto, Goran Glavaš
+* [Scaling Back-Translation with Domain Text Generation for Sign Language Gloss Translation](https://arxiv.org/abs/2210.07054) - Jinhui Ye, Wenxiang Jiao, Xing Wang, Zhaopeng Tu
+* [Translate First Reorder Later: Leveraging Monotonicity in Semantic Parsing](https://arxiv.org/abs/2210.04878) - Francesco Cazzaro, Davide Locatelli, Ariadna Quattoni, Xavier Carreras
+* [FairGer: Using NLP to Measure Support for Women and Migrants in 155 Years of German Parliamentary Debates](https://arxiv.org/abs/2210.04359) - Dominik Beese, Ole Pütz, Steffen Eger
+* [Non-Linguistic Supervision for Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2209.09433) - Yiren Jian, Chongyang Gao, Soroush Vosoughi
+* [Unsupervised Lexical Substitution with Decontextualised Embeddings](https://arxiv.org/abs/2209.08236) - Takashi Wada, Timothy Baldwin, Yuji Matsumoto, Jey Han Lau
+* [On the Limitations of Sociodemographic Adaptation with Transformers](https://arxiv.org/abs/2208.01029) - Chia-Chien Hung, Anne Lauscher, Dirk Hovy, Simone Paolo Ponzetto, Goran Glavaš
+* [Integrating Linguistic Theory and Neural Language Models](https://arxiv.org/abs/2207.09643) - Bai Li
+* [Who is we? Disambiguating the referents of first person plural pronouns in parliamentary debates](https://arxiv.org/abs/2205.14182) - Ines Rehbein, Josef Ruppenhofer, Julian Bernauer 
+* [Named Entity Linking with Entity Representation by Multiple Embeddings](https://arxiv.org/abs/2205.10498) - Oleg Vasilyev, Alex Dauenhauer, Vedant Dharnidharka, John Bohannon
+* [A Comparison of Approaches for Imbalanced Classification Problems in the Context of Retrieving Relevant Documents for an Analysis](https://arxiv.org/abs/2205.01600) - Sandra Wankmüller
+* [You Are What You Write: Preserving Privacy in the Era of Large Language Models](https://arxiv.org/abs/2204.09391) - Richard Plant, Valerio Giuffrida, Dimitra Gkatzia
+* [Explore More Guidance: A Task-aware Instruction Network for Sign Language Translation Enhanced with Data Augmentation](https://arxiv.org/abs/2204.05953) - Yong Cao, Wei Li, Xianzhi Li, Min Chen, Guangyong Chen, Long Hu, Zhengdao Li, Hwang Kai
+* [SU-NLP at SemEval-2022 Task 11: Complex Named Entity Recognition with Entity Linking](https://arxiv.org/abs/2203.11841) - Buse Çarık, Fatih Beyhan, Reyyan Yeniterzi 
+* [Modeling Intensification for Sign Language Generation: A Computational Approach](https://arxiv.org/abs/2203.09679) - Mert İnan, Yang Zhong, Sabit Hassan, Lorna Quandt, Malihe Alikhani
+* [Entropy-based Attention Regularization Frees Unintended Bias Mitigation from Lists](https://arxiv.org/abs/2203.09192) - Giuseppe Attanasio, Debora Nozza, Dirk Hovy, Elena Baralis
+* [IT5: Large-scale Text-to-text Pretraining for Italian Language Understanding and Generation](https://arxiv.org/abs/2203.03759) - Gabriele Sarti, Malvina Nissim
+* [Neural reality of argument structure constructions](https://arxiv.org/abs/2202.12246) - Bai Li, Zining Zhu, Guillaume Thomas, Frank Rudzicz, Yang Xu
+* [A Study on the Ambiguity in Human Annotation of German Oral History Interviews for Perceived Emotion Recognition and Sentiment Analysis](https://arxiv.org/abs/2201.06868) - Michael Gref, Nike Matthiesen, Sreenivasa Hikkal Venugopala, Shalaka Satheesh, Aswinkumar Vijayananth, Duc Bach Ha, Sven Behnke, Joachim Köhler
+* [Detection of Increased Time Intervals of Anti-Vaccine Tweets for COVID-19 Vaccine with BERT Model](https://arxiv.org/abs/2202.00477) - Ülkü Tuncer Küçüktaş, Fatih Uysal, Fırat Hardalaç, İsmail Biri
+* [Sign Language Video Retrieval with Free-Form Textual Queries](https://arxiv.org/abs/2201.02495) - Amanda Duarte, Samuel Albanie, Xavier Giró-i-Nieto, Gül Varol
+* [KIND: an Italian Multi-Domain Dataset for Named Entity Recognition](https://arxiv.org/abs/2112.15099) - Teresa Paccosi, Alessio Palmero Aprosio
+* [Distilling the Knowledge of Romanian BERTs Using Multiple Teachers](https://arxiv.org/abs/2112.12650) - Andrei-Marius Avram, Darius Catrina, Dumitru-Clementin Cercel, Mihai Dascălu, Traian Rebedea, Vasile Păiş, Dan Tufiş
+* [Do We Still Need Automatic Speech Recognition for Spoken Language Understanding?](https://arxiv.org/abs/2111.14842) - Lasse Borgholt, Jakob Drachmann Havtorn, Mostafa Abdou, Joakim Edin, Lars Maaløe, Anders Søgaard, Christian Igel
+* [Namesakes: Ambiguously Named Entities from Wikipedia and News](https://arxiv.org/abs/2111.11372) - Oleg Vasilyev, Aysu Altun, Nidhi Vyas, Vedant Dharnidharka, Erika Lam, John Bohannon
 * [Investigation on Data Adaptation Techniques for Neural Named Entity Recognition](https://aclanthology.org/2021.acl-srw.1/) - Evgeniia Tokarchuk, David Thulke, Weiyue Wang, Christian Dugast, Hermann Ney
 * [Cross-Language Learning for Entity Matching](https://arxiv.org/abs/2110.03338) - Ralph Peeters, Christian Bizer
 * [ur-iw-hnt at GermEval 2021: An Ensembling Strategy with Multiple BERT Models](https://arxiv.org/abs/2110.02042) - Hoai Nam Tran, Udo Kruschwitz
